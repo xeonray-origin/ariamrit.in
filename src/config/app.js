@@ -1,4 +1,4 @@
-import { HomePage, AboutPage, NewsPage } from './../pages';
+import { HomePage, AboutPage } from '../pages';
 
 export const appConfig = {
   name: 'Ariamrit Engineering Ltd',
@@ -11,10 +11,6 @@ export const appConfig = {
     {
       path: '/about',
       component: <AboutPage />,
-    },
-    {
-      path: '/news',
-      component: <NewsPage />,
     },
   ],
 };

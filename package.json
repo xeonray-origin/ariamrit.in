@@ -2,16 +2,17 @@
   "name": "ariamrit.in",
   "version": "0.1.0",
   "private": true,
+  "main": "index.tsx",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d public"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": "https://github.com/xeonray-origin/ariamrit.in.git",
-  "homepage": "https://xeonray-origin.github.io/ariamrit.in/",
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",

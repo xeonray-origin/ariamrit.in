@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { routes } from './routes';
+
+const Layout = () => <>{routes}</>;
 
 ReactDOM.render(
   <Router>
-    <App />
+    <Layout />
   </Router>,
   document.getElementById('root')
 );
