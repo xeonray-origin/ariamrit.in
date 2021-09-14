@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d build"
   },
   "repository": "https://github.com/xeonray-origin/ariamrit.in.git",
-  "homepage": ".",
+  "homepage": "https://xeonray-origin.github.io/ariamrit.in/",
   "eslintConfig": {
     "extends": [
       "react-app",
