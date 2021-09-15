@@ -1,5 +1,5 @@
 import { Switch, Route } from 'react-router-dom';
-import { appConfig } from './config';
+import { appConfig } from 'config';
 
 export const routes = (
   <Switch>

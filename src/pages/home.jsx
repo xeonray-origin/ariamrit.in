@@ -1,3 +1,6 @@
+import { withStyles } from '@material-ui/core';
+import { HomePageStyles } from 'styles';
+
 const HomePage = () => (
   <>
     HomePage
@@ -5,4 +8,4 @@ const HomePage = () => (
   </>
 );
 
-export default HomePage;
+export default withStyles(HomePageStyles)(HomePage);

@@ -2,7 +2,7 @@
   "name": "ariamrit.in",
   "version": "0.1.0",
   "private": true,
-  "main": "index.tsx",
+  "main": "index.jsx",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -13,12 +13,6 @@
   },
   "repository": "https://github.com/xeonray-origin/ariamrit.in.git",
   "homepage": "https://xeonray-origin.github.io/ariamrit.in/",
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",

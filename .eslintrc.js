@@ -47,6 +47,7 @@ module.exports = {
     'no-return-await': 'warn',
     'no-throw-literal': 'warn',
     'no-trailing-spaces': 'off',
+    'import/no-anonymous-default-export': [0, { allowCallExpression: true }],
     'no-unused-expressions': [
       'warn',
       {
@@ -77,4 +78,5 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: ['*.json', 'build', 'public'],
 };
