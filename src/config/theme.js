@@ -1,6 +1,7 @@
 import { createTheme } from '@material-ui/core/styles';
 
 const theme = createTheme({
+  type: 'light',
   breakpoints: {
     values: {
       xs: 0,

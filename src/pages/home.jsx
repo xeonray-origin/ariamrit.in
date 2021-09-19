@@ -1,11 +1,14 @@
-import { withStyles } from '@material-ui/core';
+import { withStyles, Container } from '@material-ui/core';
 import { HomePageStyles } from 'styles';
+import { HeroSection } from 'components';
 
-const HomePage = () => (
-  <>
-    HomePage
-    <img src={`${process.env.PUBLIC_URL}/resources/logo.png`} alt='' />{' '}
-  </>
-);
+const HomePage = (props) => {
+  const { classes } = props;
+  return (
+    <div className={classes.heroSection}>
+      <HeroSection />
+    </div>
+  );
+};
 
 export default withStyles(HomePageStyles)(HomePage);
