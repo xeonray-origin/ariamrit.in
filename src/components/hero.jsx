@@ -1,4 +1,10 @@
-import { Grid, Typography, withStyles } from '@material-ui/core';
+import {
+  Grid,
+  Typography,
+  withStyles,
+  Container,
+  Button,
+} from '@material-ui/core';
 import { HeroStyles } from 'styles';
 import { appConfig, homePageContent } from 'config';
 
@@ -9,34 +15,37 @@ const content = {
 const HeroSection = (props) => {
   const { classes } = props;
   return (
-    <Grid
-      container
-      spacing={2}
-      direction='row'
-      justifyContent='center'
-      alignItems='center'
-    >
-      <Grid item md={6}>
-        <Typography
-          style={{ fontSize: '5rem', fontWeight: 'bold' }}
-          variant='h3'
-        >
-          {appConfig.name}
-        </Typography>
-        <Typography
-          style={{ fontSize: '2rem', fontWeight: 'bold' }}
-          variant='subtitle1'
-        >
-          {appConfig.slogan}
-        </Typography>
-        <Typography variant='subtitle1' wrap>
-          {homePageContent.subtextUnderSlogan}
-        </Typography>
+    <Container>
+      <Grid
+        container
+        spacing={2}
+        direction='row'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Grid item md={6}>
+          <Typography className={classes.name} variant='h3'>
+            {appConfig.name}
+          </Typography>
+          <Typography className={classes.slogan} variant='subtitle1'>
+            {appConfig.slogan}
+          </Typography>
+          <Typography
+            className={classes.subtextUnderSlogan}
+            variant='subtitle1'
+            wrap
+          >
+            {homePageContent.heroSection.subtextUnderSlogan}
+          </Typography>
+          <Button className={classes.downloadBtn} variant='outlined'>
+            {homePageContent.heroSection.downloadBrochureBtn}
+          </Button>
+        </Grid>
+        <Grid item md={6}>
+          <img className={classes.heroImage} src={content.heroImage} alt='' />
+        </Grid>
       </Grid>
-      <Grid item md={6}>
-        <img className={classes.heroImage} src={content.heroImage} alt='' />
-      </Grid>
-    </Grid>
+    </Container>
   );
 };
 

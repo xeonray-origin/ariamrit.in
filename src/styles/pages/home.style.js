@@ -8,4 +8,12 @@ export default (theme) =>
       marginTop: theme.spacing(15),
       width: '100%',
     },
+    aboutSection: {
+      position: 'relative',
+      height: 'auto',
+      marginTop: theme.spacing(15),
+      width: '100%',
+      backgroundColor: '#FAFAFA',
+      padding: '5rem 0rem 5rem 0rem',
+    },
   });

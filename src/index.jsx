@@ -10,7 +10,7 @@ const Layout = withStyles(LayoutStyles)((props) => {
   return (
     <>
       <TopBar />
-      <Container>{routes}</Container>
+      {routes}
     </>
   );
 });

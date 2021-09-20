@@ -9,14 +9,14 @@ import {
 } from '@material-ui/core';
 import { TopBarStyles } from 'styles';
 import { appConfig } from 'config';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const content = {
   logo: `${process.env.PUBLIC_URL}/resources/logo.png`,
 };
 
 const DesktopMenu = (props) => {
-  const { classes, history } = props;
+  const { classes } = props;
   return (
     <Grid container spacing={3} direction='row-reverse'>
       {appConfig.menuItems.reverse().map((item, idx) => (

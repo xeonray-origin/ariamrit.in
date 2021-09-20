@@ -78,5 +78,8 @@ module.exports = {
       },
     ],
   },
+  settings: {
+    'import/resolver': 'webpack',
+  },
   ignorePatterns: ['*.json', 'build', 'public'],
 };
