@@ -15,28 +15,28 @@ const content = {
   logo: `${process.env.PUBLIC_URL}/resources/logo.png`,
 };
 
-const DesktopMenu = (props) => {
-  const { classes } = props;
-  return (
-    <Grid container spacing={3} direction='row-reverse'>
-      {appConfig.menuItems.reverse().map((item, idx) => (
-        <Grid item>
-          <Link
-            style={{ textDecoration: 'none', color: '#212121' }}
-            to={`${item === 'Home' ? '/' : '/' + item.toLowerCase()}`}
-          >
-            <MenuItem classes={classes.menuItem}>
-              <Typography variant='h6'>{item}</Typography>
-            </MenuItem>
-          </Link>
-        </Grid>
-      ))}
-    </Grid>
-  );
-};
-
 const TopBar = (props) => {
   const { classes } = props;
+
+  const DesktopMenu = () => {
+    return (
+      <Grid container spacing={3} direction='row-reverse'>
+        {appConfig.menuItems.reverse().map((item, idx) => (
+          <Grid item>
+            <Link
+              style={{ textDecoration: 'none', color: '#212121' }}
+              to={`${item === 'Home' ? '/' : '/' + item.toLowerCase()}`}
+            >
+              <MenuItem classes={classes.menuItem}>
+                <Typography variant='h6'>{item}</Typography>
+              </MenuItem>
+            </Link>
+          </Grid>
+        ))}
+      </Grid>
+    );
+  };
+
   return (
     <AppBar className={classes.appBar}>
       <Toolbar variant='dense'>
@@ -48,7 +48,7 @@ const TopBar = (props) => {
         >
           <img className={classes.logo} src={content.logo} alt='' />
         </IconButton>
-        <DesktopMenu classes={classes} />
+        <DesktopMenu />
       </Toolbar>
     </AppBar>
   );

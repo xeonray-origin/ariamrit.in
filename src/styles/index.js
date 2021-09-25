@@ -7,3 +7,4 @@ export { default as HomePageStyles } from './pages/home.style';
 export { default as HeroStyles } from './components/hero.style';
 export { default as TopBarStyles } from './components/topbar.style';
 export { default as AboutSectionStyles } from './components/about.style';
+export { default as ProductsSectionStyles } from './components/products.style';

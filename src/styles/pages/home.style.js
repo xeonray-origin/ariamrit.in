@@ -16,4 +16,10 @@ export default (theme) =>
       backgroundColor: '#FAFAFA',
       padding: '5rem 0rem 5rem 0rem',
     },
+    productsSection: {
+      position: 'relative',
+      height: '40vh',
+      width: '100%',
+      padding: '5rem 0rem 5rem 0rem',
+    },
   });

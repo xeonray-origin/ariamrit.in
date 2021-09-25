@@ -1,6 +1,6 @@
 import { withStyles, Container } from '@material-ui/core';
 import { HomePageStyles } from 'styles';
-import { HeroSection, AboutSection } from 'components';
+import { HeroSection, AboutSection, ProductsSection } from 'components';
 
 const HomePage = (props) => {
   const { classes } = props;
@@ -11,6 +11,9 @@ const HomePage = (props) => {
       </div>
       <div className={classes.aboutSection}>
         <AboutSection />
+      </div>
+      <div className={classes.productsSection}>
+        <ProductsSection />
       </div>
     </>
   );
