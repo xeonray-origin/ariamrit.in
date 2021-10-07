@@ -1,5 +1,3 @@
-const process = require('process');
-
 module.exports = {
   heroSection: {
     subtextUnderSlogan: `Lorem Ipsum is simply dummy text of the printing and 
@@ -20,26 +18,33 @@ module.exports = {
     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Fin.`,
     learnMoreBtn: 'Learn More',
   },
-  productSection: {
-    data: [
-      {
-        id: 1,
-        title: 'Cesspool Cleaner',
-        subtitle: 'upto 3000lt capacity',
-        image: `/resources/products/cesspool/3.png`,
-      },
-      {
-        id: 2,
-        title: 'Sky jacker',
-        subtitle: 'upto 15ft height',
-        image: '/resources/products/skyjacker/1.png',
-      },
-      {
-        id: 3,
-        title: 'Tipper',
-        subtitle: 'lorem ipsum',
-        image: '/resources/products/tipper/1.png',
-      },
-    ],
-  },
+  productSection: [
+    {
+      id: 1,
+      title: 'Cesspool Cleaner',
+      subtitle: 'upto 3000lt capacity',
+      image: `/resources/products/cesspool/3.png`,
+      description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+    },
+    {
+      id: 2,
+      title: 'Sky jacker',
+      subtitle: 'upto 15ft height',
+      image: '/resources/products/skyjacker/1.png',
+      description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+    },
+    {
+      id: 3,
+      title: 'Tipper',
+      subtitle: 'lorem ipsum',
+      image: '/resources/products/tipper/1.png',
+      description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+    },
+  ],
 };

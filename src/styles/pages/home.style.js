@@ -18,7 +18,7 @@ export default (theme) =>
     },
     productsSection: {
       position: 'relative',
-      height: '40vh',
+      height: 'auto',
       width: '100%',
       padding: '5rem 0rem 5rem 0rem',
     },
