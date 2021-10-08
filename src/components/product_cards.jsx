@@ -13,9 +13,9 @@ import {
 import { ProductsCardStyles } from 'styles';
 
 const ProductsCards = (props) => {
-  const { image, title, subtitle, descriptiion } = props;
+  const { image, title, subtitle, description, classes } = props;
   return (
-    <Card>
+    <Card elevation={3}>
       <CardMedia
         component='img'
         height={300}
@@ -24,17 +24,23 @@ const ProductsCards = (props) => {
         alt='green iguana'
       />
       <CardContent>
-        <Typography gutterBottom variant='h5' component='div'>
-          {title}
+        <Typography variant='h4' component='div'>
+          {title.toUpperCase()}
         </Typography>
-        <Typography variant='body2' color='text.secondary'>
-          {subtitle}
-          {descriptiion}
+        <Typography gutterBottom variant='subtitle2' color='text.secondary'>
+          {subtitle.toUpperCase()}
+        </Typography>
+        <Typography variant='body1' color='text.secondary'>
+          {description}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size='small'>know more</Button>
-        <Button size='small'>download spec</Button>
+        <Button variant='outlined' size='small'>
+          know more
+        </Button>
+        <Button variant='outlined' size='small'>
+          download spec
+        </Button>
       </CardActions>
     </Card>
   );

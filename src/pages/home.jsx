@@ -28,6 +28,7 @@ const HomePage = (props) => {
               <Grid item xs={12} md={4}>
                 <ProductsCards
                   title={product.title}
+                  subtitle={product.subtitle}
                   description={product.description}
                   image={product.image}
                 />

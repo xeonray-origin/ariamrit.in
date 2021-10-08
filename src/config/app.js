@@ -5,7 +5,7 @@ export const appConfig = {
   slogan: 'Promoting Efficiency',
   appUrl: process.env.PUBLIC_URL,
   logo: `${process.env.PUBLIC_URL}/resources/logo.png`,
-  menuItems: ['Home', 'About', 'Products', 'Research', 'Contact'],
+  menuItems: ['Contact', 'Research', 'Products', 'About', 'Home'],
   routes: [
     {
       path: '/',

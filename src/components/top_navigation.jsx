@@ -17,11 +17,10 @@ const content = {
 
 const TopBar = (props) => {
   const { classes } = props;
-
   const DesktopMenu = () => {
     return (
       <Grid container spacing={3} direction='row-reverse'>
-        {appConfig.menuItems.reverse().map((item, idx) => (
+        {appConfig.menuItems.map((item, idx) => (
           <Grid item>
             <Link
               style={{ textDecoration: 'none', color: '#212121' }}

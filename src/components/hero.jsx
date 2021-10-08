@@ -24,15 +24,11 @@ const HeroSection = (props) => {
         alignItems='center'
       >
         <Grid item md={6}>
-          <Typography className={classes.name} variant='h3'>
-            {appConfig.name}
-          </Typography>
-          <Typography className={classes.slogan} variant='subtitle1'>
-            {appConfig.slogan}
-          </Typography>
+          <Typography variant='h3'>{appConfig.name}</Typography>
+          <Typography variant='subtitle1'>{appConfig.slogan}</Typography>
           <Typography
             className={classes.subtextUnderSlogan}
-            variant='subtitle1'
+            variant='body1'
             wrap
           >
             {homePageContent.heroSection.subtextUnderSlogan}

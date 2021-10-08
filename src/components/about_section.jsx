@@ -27,10 +27,10 @@ const AboutSection = (props) => {
           <img className={classes.aboutImage} src={content.aboutImage} alt='' />
         </Grid>
         <Grid item xs={6}>
-          <Typography className={classes.title} variant='h1' wrap>
+          <Typography variant='h1' wrap>
             {homePageContent.aboutSection.title}
           </Typography>
-          <Typography className={classes.about} variant='body1' wrap>
+          <Typography variant='body1' wrap>
             {homePageContent.aboutSection.about}
           </Typography>
           <Button className={classes.learnMoreBtn} variant='outlined'>
