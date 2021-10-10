@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/ariamrit.in/static/js/main.ea7e8cde.chunk.js",
-    "main.js.map": "/ariamrit.in/static/js/main.ea7e8cde.chunk.js.map",
+    "main.js": "/ariamrit.in/static/js/main.cbc109e4.chunk.js",
+    "main.js.map": "/ariamrit.in/static/js/main.cbc109e4.chunk.js.map",
     "runtime-main.js": "/ariamrit.in/static/js/runtime-main.b4c0578e.js",
     "runtime-main.js.map": "/ariamrit.in/static/js/runtime-main.b4c0578e.js.map",
-    "static/js/2.690d6950.chunk.js": "/ariamrit.in/static/js/2.690d6950.chunk.js",
-    "static/js/2.690d6950.chunk.js.map": "/ariamrit.in/static/js/2.690d6950.chunk.js.map",
+    "static/js/2.63de25af.chunk.js": "/ariamrit.in/static/js/2.63de25af.chunk.js",
+    "static/js/2.63de25af.chunk.js.map": "/ariamrit.in/static/js/2.63de25af.chunk.js.map",
     "index.html": "/ariamrit.in/index.html",
-    "static/js/2.690d6950.chunk.js.LICENSE.txt": "/ariamrit.in/static/js/2.690d6950.chunk.js.LICENSE.txt"
+    "static/js/2.63de25af.chunk.js.LICENSE.txt": "/ariamrit.in/static/js/2.63de25af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b4c0578e.js",
-    "static/js/2.690d6950.chunk.js",
-    "static/js/main.ea7e8cde.chunk.js"
+    "static/js/2.63de25af.chunk.js",
+    "static/js/main.cbc109e4.chunk.js"
   ]
 }
