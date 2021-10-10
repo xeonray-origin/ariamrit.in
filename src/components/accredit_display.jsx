@@ -26,19 +26,15 @@ const AccreditDisplay = (props) => {
         <Grid item>
           <Container>
             {isIcon ? (
-              <Icon style={{ fontSize: '6rem', color: '#6B6B6B' }}>
+              <Icon style={{ fontSize: '4rem', color: '#6B6B6B' }}>
                 {image}
               </Icon>
             ) : (
-              <img
-                height={100}
-                src={process.env.PUBLIC_URL + image}
-                alt='...'
-              />
+              <img height={80} src={process.env.PUBLIC_URL + image} alt='...' />
             )}
           </Container>
-          <Typography variant='h6'>{stat ?? stat}</Typography>
-          <Typography variant='body2'>{text}</Typography>
+          <Typography variant='h4'>{stat ?? stat}</Typography>
+          <Typography variant='h6'>{text}</Typography>
         </Grid>
       </Grid>
     </>

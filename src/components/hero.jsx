@@ -18,7 +18,7 @@ const HeroSection = (props) => {
     <Container>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         direction='row'
         justifyContent='center'
         alignItems='center'

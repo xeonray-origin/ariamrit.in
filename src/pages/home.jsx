@@ -46,7 +46,7 @@ const HomePage = (props) => {
         <Container>
           <Grid
             container
-            spacing={10}
+            spacing={5}
             direction='row'
             justifyContent='center'
             alignItems='center'

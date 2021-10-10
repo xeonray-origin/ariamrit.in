@@ -81,5 +81,11 @@ module.exports = {
       image: 'high_quality',
       text: 'Excellence & Quality',
     },
+    {
+      isIcon: true,
+      stat: false,
+      image: 'precision_manufacturing',
+      text: 'Recognised Manufacturer',
+    },
   ],
 };
