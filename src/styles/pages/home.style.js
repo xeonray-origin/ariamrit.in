@@ -5,21 +5,30 @@ export default (theme) =>
     heroSection: {
       position: 'relative',
       height: 'auto',
-      marginTop: theme.spacing(15),
+      marginTop: theme.spacing(13),
       width: '100%',
     },
     aboutSection: {
       position: 'relative',
       height: 'auto',
-      marginTop: theme.spacing(15),
+      marginTop: theme.spacing(3),
       width: '100%',
       backgroundColor: '#FAFAFA',
-      padding: '5rem 0rem 5rem 0rem',
+      padding: '3rem 0rem 3rem 0rem',
     },
     productsSection: {
       position: 'relative',
       height: 'auto',
       width: '100%',
+      padding: '1rem 0rem 1rem 0rem',
+    },
+
+    accreditSection: {
+      position: 'relative',
+      height: 'auto',
+      marginTop: theme.spacing(7),
+      width: '100%',
+      backgroundColor: '#F2F2F2',
       padding: '5rem 0rem 5rem 0rem',
     },
   });

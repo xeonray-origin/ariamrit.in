@@ -8,3 +8,4 @@ export { default as HeroStyles } from './components/hero.style';
 export { default as TopBarStyles } from './components/topbar.style';
 export { default as AboutSectionStyles } from './components/about.style';
 export { default as ProductsCardStyles } from './components/products.style';
+export { default as AccreditDisplayStyles } from './components/accredit.style';

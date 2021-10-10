@@ -18,33 +18,68 @@ module.exports = {
     Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Fin.`,
     learnMoreBtn: 'Learn More',
   },
-  productSection: [
-    {
-      id: 1,
-      title: 'Cesspool Cleaner',
-      subtitle: 'upto 3000lt capacity',
-      image: `/resources/products/cesspool/3.png`,
-      description: `Contrary to popular belief, Lorem Ipsum is not
+  productSection: {
+    cards: [
+      {
+        id: 1,
+        title: 'Cesspool Cleaner',
+        subtitle: 'upto 3000lt capacity',
+        image: `/resources/products/cesspool/3.png`,
+        description: `Contrary to popular belief, Lorem Ipsum is not
         simply random text.It has  roots in a piece of classical 
         Latin literature from 45 BC, making it over 2000 years`,
+      },
+      {
+        id: 2,
+        title: 'Sky jacker',
+        subtitle: 'upto 15ft height',
+        image: '/resources/products/skyjacker/1.png',
+        description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+      },
+      {
+        id: 3,
+        title: 'Tipper',
+        subtitle: 'lorem ipsum',
+        image: '/resources/products/tipper/1.png',
+        description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+      },
+    ],
+    buttons: ['KNOW MORE', 'download'],
+  },
+  accredits: [
+    {
+      isIcon: false,
+      image: '/resources/icons/fieo.png',
+      stat: false,
+      text: 'Recognised Govt. of India Exporter',
     },
     {
-      id: 2,
-      title: 'Sky jacker',
-      subtitle: 'upto 15ft height',
-      image: '/resources/products/skyjacker/1.png',
-      description: `Contrary to popular belief, Lorem Ipsum is not
-        simply random text.It has  roots in a piece of classical 
-        Latin literature from 45 BC, making it over 2000 years`,
+      isIcon: false,
+      stat: false,
+      image: '/resources/icons/iso_logo.png',
+      text: 'ISO:9000 Certified',
     },
     {
-      id: 3,
-      title: 'Tipper',
-      subtitle: 'lorem ipsum',
-      image: '/resources/products/tipper/1.png',
-      description: `Contrary to popular belief, Lorem Ipsum is not
-        simply random text.It has  roots in a piece of classical 
-        Latin literature from 45 BC, making it over 2000 years`,
+      isIcon: true,
+      stat: '50+',
+      image: 'account_balance',
+      text: 'Municipalities and Organisations',
+    },
+    {
+      isIcon: true,
+      stat: '15+',
+      image: 'access_time_filled',
+      text: 'Years of Experience',
+    },
+    {
+      isIcon: true,
+      stat: false,
+      image: 'high_quality',
+      text: 'Excellence & Quality',
     },
   ],
 };
