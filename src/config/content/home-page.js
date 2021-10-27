@@ -88,4 +88,31 @@ module.exports = {
       text: 'Recognised Manufacturer',
     },
   ],
+  research: [
+    {
+      title: 'Sutainable Energy',
+      subtitle: 'Portable Solar Energy',
+      text: `Contrary to popular belief, Lorem Ipsum is not
+      simply random text.It has  roots in a piece of classical 
+      Latin literature from 45 BC, making it over 2000 years`,
+      image:
+        process.env.PUBLIC_URL + '/resources/research/sustainable-energy.jpeg',
+    },
+    {
+      title: 'Recycle and Reuse',
+      subtitle: 'Cleaner and Greener',
+      text: `Contrary to popular belief, Lorem Ipsum is not
+      simply random text.It has  roots in a piece of classical 
+      Latin literature from 45 BC, making it over 2000 years`,
+      image: process.env.PUBLIC_URL + '/resources/research/recycle.jpg',
+    },
+    {
+      title: 'IT Infrastructure and Development',
+      subtitle: 'Cutting Edge Integrations',
+      text: `Contrary to popular belief, Lorem Ipsum is not
+      simply random text.It has  roots in a piece of classical 
+      Latin literature from 45 BC, making it over 2000 years`,
+      image: process.env.PUBLIC_URL + '/resources/research/it.jpeg',
+    },
+  ],
 };

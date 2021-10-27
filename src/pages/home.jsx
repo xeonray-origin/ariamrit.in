@@ -1,10 +1,13 @@
-import { withStyles, Container, Grid } from '@material-ui/core';
+import { withStyles, Container, Grid, Typography } from '@material-ui/core';
 import { HomePageStyles } from 'styles';
 import {
   HeroSection,
   AboutSection,
   ProductsCards,
   AccreditDisplay,
+  ResearchCard,
+  FeedCard,
+  ContactForm,
 } from 'components';
 import { homePageContent } from 'config';
 
@@ -61,6 +64,71 @@ const HomePage = (props) => {
                 />
               </Grid>
             ))}
+          </Grid>
+        </Container>
+      </div>
+      <div className={classes.researchSection}>
+        <Container>
+          <Grid
+            container
+            spacing={5}
+            direction='row'
+            justifyContent='center'
+            alignItems='center'
+          >
+            <Grid item md={8} xs={12}>
+              {homePageContent.research.map((data) => (
+                <ResearchCard
+                  title={data.title}
+                  text={data.text}
+                  image={data.image}
+                  subtitle={data.subtitle}
+                />
+              ))}
+            </Grid>
+            <Grid item md={4} xs={12}>
+              <Typography variant='subtitle2'>#Tweets</Typography>
+              <div classsName={classes.tweetHolder}>
+                {homePageContent.research.map((data) => (
+                  <FeedCard
+                    title={data.title}
+                    text={data.text}
+                    image={data.image}
+                    subtitle={data.subtitle}
+                  />
+                ))}
+              </div>
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+      <div className={classes.contactSection}>
+        <Container>
+          <Grid
+            container
+            spacing={5}
+            direction='row'
+            justifyContent='center'
+            alignItems='center'
+          >
+            <Grid item md={6} xs={12}>
+              <ContactForm />
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <div className={classes.maprouter}>
+                <iframe
+                  title='abc'
+                  className={classes.gmap_iframe}
+                  width='100%'
+                  frameborder='0'
+                  scrolling='no'
+                  marginheight='0'
+                  marginwidth='0'
+                  // eslint-disable-next-line max-len
+                  src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=17G,DoverTerrace&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
+                ></iframe>
+              </div>
+            </Grid>
           </Grid>
         </Container>
       </div>

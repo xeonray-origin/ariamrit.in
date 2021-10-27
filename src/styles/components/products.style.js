@@ -1,3 +1,8 @@
 import { createStyles } from '@material-ui/styles';
 
-export default ({ breakpoints, spacing, palette }) => createStyles({});
+export default ({ spacing }) =>
+  createStyles({
+    cardMedia: {
+      padding: spacing(2),
+    },
+  });

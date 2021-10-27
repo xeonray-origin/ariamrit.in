@@ -3,3 +3,7 @@ export { default as TopBar } from './top_navigation';
 export { default as AboutSection } from './about_section';
 export { default as ProductsCards } from './product_cards';
 export { default as AccreditDisplay } from './accredit_display';
+export { default as ResearchCard } from './research_card';
+export { default as FeedCard } from './feed_card';
+export { default as ContactForm } from './contact_form.jsx';
+export { default as FooterDiv } from './footer';

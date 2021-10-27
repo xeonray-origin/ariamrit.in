@@ -9,7 +9,7 @@ import {
   CssBaseline,
 } from '@material-ui/core';
 import { LayoutStyles } from 'styles';
-import { TopBar } from 'components';
+import { TopBar, FooterDiv } from 'components';
 import { theme } from 'config';
 
 const Layout = withStyles(LayoutStyles)((props) => {
@@ -17,6 +17,7 @@ const Layout = withStyles(LayoutStyles)((props) => {
     <>
       <TopBar />
       {routes}
+      <FooterDiv />
     </>
   );
 });

@@ -17,6 +17,7 @@ const ProductsCards = (props) => {
   return (
     <Card elevation={3}>
       <CardMedia
+        className={classes.cardMedia}
         component='img'
         height={300}
         width={200}
@@ -24,10 +25,8 @@ const ProductsCards = (props) => {
         alt='green iguana'
       />
       <CardContent>
-        <Typography variant='h4' component='div'>
-          {title.toUpperCase()}
-        </Typography>
-        <Typography gutterBottom variant='subtitle2' color='text.secondary'>
+        <Typography variant='h4'>{title.toUpperCase()}</Typography>
+        <Typography gutterBottom={2} variant='title' color='text.secondary'>
           {subtitle.toUpperCase()}
         </Typography>
         <Typography variant='body1' color='text.secondary'>

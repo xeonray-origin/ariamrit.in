@@ -22,7 +22,6 @@ export default (theme) =>
       width: '100%',
       padding: '1rem 0rem 1rem 0rem',
     },
-
     accreditSection: {
       position: 'relative',
       height: 'auto',
@@ -31,4 +30,41 @@ export default (theme) =>
       backgroundColor: '#F2F2F2',
       padding: '5rem 0rem 5rem 0rem',
     },
+    researchSection: {
+      position: 'relative',
+      height: 'auto',
+      marginTop: theme.spacing(7),
+      width: '100%',
+      backgroundColor: '#FAFAFA',
+      padding: '5rem 0rem 5rem 0rem',
+    },
+    tweetHolder: {
+      height: '100%',
+      width: '100%',
+      padding: '.5rem',
+      border: '1px solid #c1c1c1',
+      backgroundColor: '#ffffff',
+      overflow: 'hidden',
+      overflowY: 'scroll',
+    },
+    contactSection: {
+      height: 'auto',
+      paddingTop: '1rem',
+      paddingBottom: '10rem',
+      // backgroundColor: '#4E8D62',
+    },
+
+    mapouter: {
+      position: 'relative',
+      textAlign: 'right',
+      width: '100%',
+      height: '400px',
+    },
+    gmap_canvas: {
+      overflow: 'hidden',
+      background: 'none!important',
+      width: '100%',
+      height: '400px',
+    },
+    gmap_iframe: { height: '400px!important' },
   });

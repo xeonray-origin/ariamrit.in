@@ -33,8 +33,8 @@ const AccreditDisplay = (props) => {
               <img height={80} src={process.env.PUBLIC_URL + image} alt='...' />
             )}
           </Container>
-          <Typography variant='h4'>{stat ?? stat}</Typography>
-          <Typography variant='h6'>{text}</Typography>
+          {/* <Typography variant='h4'>{}</Typography> */}
+          <Typography variant='body1'>{`${stat || ''} ${text}`}</Typography>
         </Grid>
       </Grid>
     </>
