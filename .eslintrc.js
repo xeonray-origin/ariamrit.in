@@ -77,6 +77,7 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    'react/prop-types': 'off',
   },
   settings: {
     'import/resolver': 'webpack',

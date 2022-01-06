@@ -16,7 +16,7 @@ const Layout = withStyles(LayoutStyles)((props) => {
   return (
     <>
       <TopBar />
-      {routes}
+      <div style={{ minHeight: '100vh', paddingTop: '5rem' }}>{routes}</div>
       <FooterDiv />
     </>
   );

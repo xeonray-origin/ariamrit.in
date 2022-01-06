@@ -11,6 +11,8 @@ import {
 } from 'components';
 import { homePageContent } from 'config';
 
+const GLOBAL_SPACING = 2;
+
 const HomePage = (props) => {
   const { classes } = props;
   return (
@@ -27,7 +29,7 @@ const HomePage = (props) => {
         <Container>
           <Grid
             container
-            spacing={1}
+            spacing={GLOBAL_SPACING}
             direction='row'
             justifyContent='center'
             alignItems='center'
@@ -35,6 +37,7 @@ const HomePage = (props) => {
             {homePageContent.productSection.cards.map((product) => (
               <Grid item xs={12} md={4}>
                 <ProductsCards
+                  id={product.id}
                   title={product.title}
                   subtitle={product.subtitle}
                   description={product.description}
@@ -71,7 +74,7 @@ const HomePage = (props) => {
         <Container>
           <Grid
             container
-            spacing={5}
+            spacing={GLOBAL_SPACING}
             direction='row'
             justifyContent='center'
             alignItems='center'
@@ -106,27 +109,22 @@ const HomePage = (props) => {
         <Container>
           <Grid
             container
-            spacing={5}
+            spacing={GLOBAL_SPACING}
             direction='row'
             justifyContent='center'
             alignItems='center'
           >
-            <Grid item md={6} xs={12}>
+            <Grid item md={4} xs={12}>
               <ContactForm />
             </Grid>
-            <Grid item md={6} xs={12}>
+            <Grid item md={8} xs={12}>
               <div className={classes.maprouter}>
-                <iframe
-                  title='abc'
-                  className={classes.gmap_iframe}
+                <img
+                  alt='Not found'
+                  height='400px'
                   width='100%'
-                  frameborder='0'
-                  scrolling='no'
-                  marginheight='0'
-                  marginwidth='0'
-                  // eslint-disable-next-line max-len
-                  src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=17G,DoverTerrace&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
-                ></iframe>
+                  src={homePageContent.contact.mapUrl}
+                />
               </div>
             </Grid>
           </Grid>

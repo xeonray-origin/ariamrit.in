@@ -48,23 +48,26 @@ export default (theme) =>
       overflowY: 'scroll',
     },
     contactSection: {
-      height: 'auto',
-      paddingTop: '1rem',
-      paddingBottom: '10rem',
-      // backgroundColor: '#4E8D62',
+      // paddingTop: '10rem',
+      paddingBottom: theme.spacing(10),
+      // backgroundColor: '#07AC5D',
     },
 
     mapouter: {
       position: 'relative',
       textAlign: 'right',
       width: '100%',
-      height: '400px',
+      height: '100%',
     },
     gmap_canvas: {
       overflow: 'hidden',
       background: 'none!important',
-      width: '100%',
-      height: '400px',
+      width: 'auto',
+      height: '100%',
     },
-    gmap_iframe: { height: '400px!important' },
+    gmap_iframe: {
+      height: '65vh!important',
+      width: '50%!important',
+      display: 'inline-block',
+    },
   });

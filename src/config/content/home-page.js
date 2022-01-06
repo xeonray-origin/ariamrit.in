@@ -115,4 +115,7 @@ module.exports = {
       image: process.env.PUBLIC_URL + '/resources/research/it.jpeg',
     },
   ],
+  contact: {
+    mapUrl: process.env.PUBLIC_URL + '/placeholder/map.png',
+  },
 };

@@ -13,3 +13,4 @@ export { default as ResearchCardStyles } from './components/research_card.style'
 export { default as FeedCardStyles } from './components/feeds.style';
 export { default as ContactFormStyles } from './components/contact_form';
 export { default as FooterStyles } from './components/footer.style';
+export { default as ProductPageStyles } from './pages/products.style';

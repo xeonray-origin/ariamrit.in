@@ -11,9 +11,16 @@ import {
   Button,
 } from '@material-ui/core';
 import { ProductsCardStyles } from 'styles';
+import { PropTypes } from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 const ProductsCards = (props) => {
-  const { image, title, subtitle, description, classes } = props;
+  const { id, image, title, subtitle, description, classes } = props;
+
+  const onKnowMore = () => {
+    props.history.push('/product/' + id);
+  };
+
   return (
     <Card elevation={3}>
       <CardMedia
@@ -34,7 +41,7 @@ const ProductsCards = (props) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant='outlined' size='small'>
+        <Button onClick={onKnowMore} variant='outlined' size='small'>
           know more
         </Button>
         <Button variant='outlined' size='small'>
@@ -45,4 +52,13 @@ const ProductsCards = (props) => {
   );
 };
 
-export default withStyles(ProductsCardStyles)(ProductsCards);
+ProductsCards.propTypes = {
+  id: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  classes: PropTypes.object.isRequired,
+};
+
+export default withRouter(withStyles(ProductsCardStyles)(ProductsCards));

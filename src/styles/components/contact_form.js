@@ -4,12 +4,14 @@ export default ({ spacing }) =>
   createStyles({
     card: {
       backgroundColor: '#ffffff',
-      width: 'auto',
-      height: '100%',
-      padding: '1rem',
+      minHeight: '300px',
+      width: '100%',
+      display: 'inline-block',
+      borderRadius: 0,
+      padding: spacing(1),
     },
     image: {
-      width: '30%',
+      // width: '30%',
     },
     input: {
       width: '100%',
