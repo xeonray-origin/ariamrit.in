@@ -1,13 +1,15 @@
-import { createStyles } from '@material-ui/styles';
+import { createStyles } from '@mui/styles';
 
 export default (theme) =>
   createStyles({
     appBar: {
       height: '60px',
-      backgroundColor: 'transparent',
       border: 'none',
       position: 'relative',
       boxShadow: 'none',
+      '&$.MuiAppBar-root': {
+        backgroundColor: '#ffffff!important',
+      },
     },
     toolbar: {
       height: '100%',

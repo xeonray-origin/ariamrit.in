@@ -1,6 +1,6 @@
 import { products } from 'config';
 import { ProductsCards } from 'components';
-import { Grid, Container } from '@material-ui/core';
+import { Grid, Container } from '@mui/material';
 
 const ProductPage = () => {
   return (

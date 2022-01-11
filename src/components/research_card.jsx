@@ -1,5 +1,4 @@
 import {
-  withStyles,
   Container,
   Icon,
   Card,
@@ -10,8 +9,9 @@ import {
   CardActions,
   Button,
   Box,
-} from '@material-ui/core';
+} from '@mui/material';
 import { ResearchCardStyles } from 'styles';
+import { withStyles } from '@mui/styles';
 
 const ResearchCards = (props) => {
   const { classes, title, subtitle, text, image } = props;

@@ -1,24 +1,18 @@
-import { withStyles, Container, Grid, Typography } from '@material-ui/core';
+import { Container, Stack, Typography } from '@mui/material';
 import { FooterStyles } from 'styles';
 import { footerContent } from 'config';
+import { withStyles } from '@mui/styles';
 
 const FooterDiv = (props) => {
   const { classes } = props;
   return (
     <div className={classes.footer}>
-      <Container maxWidth='lg'>
-        <Grid
-          container
-          direction='row'
-          alignItems='center'
-          justifyContent='center'
-          spacing={3}
-          justify='center'
-        >
-          <Grid item>
-            <Typography>{footerContent.website}</Typography>
-          </Grid>
-        </Grid>
+      <Container>
+        <Stack justifyContent={'space-between'} direction='row' spacing={5}>
+          <Typography>{footerContent.website}</Typography>
+          <Typography>{footerContent.website}</Typography>
+          <Typography>{footerContent.website}</Typography>
+        </Stack>
       </Container>
     </div>
   );

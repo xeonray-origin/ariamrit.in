@@ -1,5 +1,4 @@
 import {
-  withStyles,
   Container,
   Icon,
   Card,
@@ -9,10 +8,11 @@ import {
   Typography,
   CardActions,
   Button,
-} from '@material-ui/core';
+} from '@mui/material';
 import { ProductsCardStyles } from 'styles';
 import { PropTypes } from 'prop-types';
 import { withRouter } from 'react-router-dom';
+import { withStyles } from '@mui/styles';
 
 const ProductsCards = (props) => {
   const { id, image, title, subtitle, description, classes } = props;
@@ -33,7 +33,7 @@ const ProductsCards = (props) => {
       />
       <CardContent>
         <Typography variant='h4'>{title.toUpperCase()}</Typography>
-        <Typography gutterBottom={2} variant='title' color='text.secondary'>
+        <Typography variant='title' color='text.secondary'>
           {subtitle.toUpperCase()}
         </Typography>
         <Typography variant='body1' color='text.secondary'>

@@ -1,14 +1,12 @@
-import { createStyles } from '@material-ui/styles';
+import { createStyles } from '@mui/styles';
 
 export default (theme) =>
   createStyles({
     footer: {
       backgroundColor: '#212121',
+      color: '#f1f1f2',
       height: '5rem',
-      position: 'relative',
-      bottom: 0,
-      top: 1,
-      color: '#f1f1f1!important',
-      zIndex: 1000,
+      display: 'flex',
+      alignItems: 'center',
     },
   });

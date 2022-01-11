@@ -1,15 +1,15 @@
 import {
   AppBar,
   Toolbar,
-  withStyles,
   IconButton,
   Grid,
   Typography,
   MenuItem,
-} from '@material-ui/core';
+} from '@mui/material';
 import { TopBarStyles } from 'styles';
 import { appConfig } from 'config';
 import { Link } from 'react-router-dom';
+import { withStyles } from '@mui/styles';
 
 const content = {
   logo: `${process.env.PUBLIC_URL}/resources/logo.png`,
@@ -21,12 +21,12 @@ const TopBar = (props) => {
     return (
       <Grid container spacing={3} direction='row-reverse'>
         {appConfig.menuItems.map((item, idx) => (
-          <Grid item>
+          <Grid item key={idx}>
             <Link
               style={{ textDecoration: 'none', color: '#212121' }}
               to={`${item === 'Home' ? '/' : '/' + item.toLowerCase()}`}
             >
-              <MenuItem classes={classes.menuItem}>
+              <MenuItem className={classes.menuItem}>
                 <Typography variant='h6'>{item}</Typography>
               </MenuItem>
             </Link>
@@ -37,8 +37,8 @@ const TopBar = (props) => {
   };
 
   return (
-    <AppBar className={classes.appBar}>
-      <Toolbar variant='dense'>
+    <AppBar position='relative' className={classes.appBar}>
+      <Toolbar sx={{ backgroundColor: '#ffffff' }} variant='dense'>
         <IconButton
           size='medium'
           edge='start'

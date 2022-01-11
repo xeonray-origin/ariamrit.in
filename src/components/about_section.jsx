@@ -1,12 +1,7 @@
-import {
-  Grid,
-  Typography,
-  withStyles,
-  Container,
-  Button,
-} from '@material-ui/core';
+import { Grid, Typography, Container, Button } from '@mui/material';
 import { AboutSectionStyles } from 'styles';
 import { homePageContent } from 'config';
+import { withStyles } from '@mui/styles';
 
 const content = {
   aboutImage: `${process.env.PUBLIC_URL}/resources/products/skyjacker/4.png`,

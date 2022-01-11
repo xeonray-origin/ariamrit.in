@@ -1,42 +1,24 @@
-import {
-  withStyles,
-  Container,
-  Icon,
-  Card,
-  Grid,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Button,
-} from '@material-ui/core';
+import { Container, Icon, Grid, Typography, Stack } from '@mui/material';
 import { AccreditDisplayStyles } from 'styles';
+import { withStyles } from '@mui/styles';
 
 const AccreditDisplay = (props) => {
   const { isIcon, text, image, stat } = props;
   return (
     <>
-      <Grid
-        justifyContent='center'
-        alignContent='center'
-        align='center'
-        direnction='row'
-        container
+      <Stack
+        justifyContent={'space-evenly'}
+        alignItems={'center'}
+        direction={'row'}
+        spacing={8}
       >
-        <Grid item>
-          <Container>
-            {isIcon ? (
-              <Icon style={{ fontSize: '4rem', color: '#6B6B6B' }}>
-                {image}
-              </Icon>
-            ) : (
-              <img height={80} src={process.env.PUBLIC_URL + image} alt='...' />
-            )}
-          </Container>
-          {/* <Typography variant='h4'>{}</Typography> */}
-          <Typography variant='body1'>{`${stat || ''} ${text}`}</Typography>
-        </Grid>
-      </Grid>
+        {isIcon ? (
+          <Icon style={{ fontSize: '4rem', color: '#6B6B6B' }}>{image}</Icon>
+        ) : (
+          <img height={80} src={process.env.PUBLIC_URL + image} alt='...' />
+        )}
+        {/* <Typography variant='h4'>{}</Typography> */}
+      </Stack>
     </>
   );
 };

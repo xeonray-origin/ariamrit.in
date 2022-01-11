@@ -1,5 +1,4 @@
 import {
-  withStyles,
   Container,
   Icon,
   Card,
@@ -13,7 +12,9 @@ import {
   Input,
   FormControl,
   TextField,
-} from '@material-ui/core';
+} from '@mui/material';
+import { withStyles } from '@mui/styles';
+
 import { ContactFormStyles } from 'styles';
 
 const ContactForm = (props) => {

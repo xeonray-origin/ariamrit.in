@@ -1,17 +1,6 @@
-import {
-  withStyles,
-  Container,
-  Icon,
-  Card,
-  Grid,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Button,
-  Box,
-} from '@material-ui/core';
+import { Card, CardMedia, CardContent, Typography, Box } from '@mui/material';
 import { FeedCardStyles } from 'styles';
+import { withStyles } from '@mui/styles';
 
 const FeedCard = (props) => {
   const { classes, title, subtitle, text, image } = props;

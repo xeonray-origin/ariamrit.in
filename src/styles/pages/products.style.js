@@ -1,3 +1,3 @@
-import { createStyles } from '@material-ui/styles';
+import { createStyles } from '@mui/styles';
 
 export default (theme) => createStyles({});

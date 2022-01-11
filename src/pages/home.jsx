@@ -1,4 +1,4 @@
-import { withStyles, Container, Grid, Typography } from '@material-ui/core';
+import { Container, Grid, Typography } from '@mui/material';
 import { HomePageStyles } from 'styles';
 import {
   HeroSection,
@@ -10,6 +10,7 @@ import {
   ContactForm,
 } from 'components';
 import { homePageContent } from 'config';
+import { withStyles } from '@mui/styles';
 
 const GLOBAL_SPACING = 2;
 

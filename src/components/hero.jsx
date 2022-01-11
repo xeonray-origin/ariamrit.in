@@ -1,12 +1,7 @@
-import {
-  Grid,
-  Typography,
-  withStyles,
-  Container,
-  Button,
-} from '@material-ui/core';
+import { Grid, Typography, Container, Button } from '@mui/material';
 import { HeroStyles } from 'styles';
 import { appConfig, homePageContent } from 'config';
+import { withStyles } from '@mui/styles';
 
 const content = {
   heroImage: `${process.env.PUBLIC_URL}/resources/products/cesspool/4.png`,
