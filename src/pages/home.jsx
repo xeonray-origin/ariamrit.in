@@ -12,7 +12,7 @@ import {
 import { homePageContent } from 'config';
 import { withStyles } from '@mui/styles';
 
-const GLOBAL_SPACING = 2;
+const GLOBAL_SPACING = 5;
 
 const HomePage = (props) => {
   const { classes } = props;
@@ -24,7 +24,9 @@ const HomePage = (props) => {
         </Container>
       </div>
       <div className={classes.aboutSection}>
-        <AboutSection />
+        <Container>
+          <AboutSection />
+        </Container>
       </div>
       <div className={classes.productsSection}>
         <Container>

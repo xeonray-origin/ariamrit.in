@@ -4,36 +4,39 @@ import { homePageContent } from 'config';
 import { withStyles } from '@mui/styles';
 
 const content = {
-  aboutImage: `${process.env.PUBLIC_URL}/resources/products/skyjacker/4.png`,
+  aboutImage: `${process.env.PUBLIC_URL}/resources/icons/about_us_img.svg`,
 };
 
 const AboutSection = (props) => {
   const { classes } = props;
   return (
-    <Container>
-      <Grid
-        container
-        spacing={2}
-        direction='row'
-        justifyContent='center'
-        alignItems='center'
-      >
-        <Grid item xs={6}>
-          <img className={classes.aboutImage} src={content.aboutImage} alt='' />
-        </Grid>
-        <Grid item xs={6}>
-          <Typography variant='h1' wrap>
+    <Grid container spacing={5} alignItems='center'>
+      <Grid item xs={4}>
+        <object
+          className={classes.aboutImage}
+          data={content.aboutImage}
+          alt='asda'
+        >
+          asd
+        </object>
+      </Grid>
+      <Grid alignItems={'center'} item xs={8}>
+        <div className={classes.sectionTitle}>
+          <Typography className={classes.sectionTitleText}>
             {homePageContent.aboutSection.title}
           </Typography>
-          <Typography variant='body1' wrap>
+        </div>
+        <div className={classes.about}>
+          <Typography align='justify' variant='body1'>
             {homePageContent.aboutSection.about}
           </Typography>
-          <Button className={classes.learnMoreBtn} variant='outlined'>
-            {homePageContent.aboutSection.learnMoreBtn}
-          </Button>
-        </Grid>
+        </div>
+
+        <Button className={classes.learnMoreBtn} variant='outlined'>
+          {homePageContent.aboutSection.learnMoreBtn}
+        </Button>
       </Grid>
-    </Container>
+    </Grid>
   );
 };
 

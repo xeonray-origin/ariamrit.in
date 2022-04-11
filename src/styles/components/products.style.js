@@ -5,4 +5,7 @@ export default ({ spacing }) =>
     cardMedia: {
       padding: spacing(2),
     },
+    card: {
+      width: '100%',
+    },
   });

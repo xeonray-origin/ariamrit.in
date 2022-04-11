@@ -10,33 +10,27 @@ const content = {
 const HeroSection = (props) => {
   const { classes } = props;
   return (
-    <Container>
-      <Grid
-        container
-        spacing={1}
-        direction='row'
-        justifyContent='center'
-        alignItems='center'
-      >
-        <Grid item md={6}>
-          <Typography variant='h3'>{appConfig.name}</Typography>
-          <Typography variant='subtitle1'>{appConfig.slogan}</Typography>
-          <Typography
-            className={classes.subtextUnderSlogan}
-            variant='body1'
-            wrap
-          >
-            {homePageContent.heroSection.subtextUnderSlogan}
-          </Typography>
-          <Button className={classes.downloadBtn} variant='outlined'>
-            {homePageContent.heroSection.downloadBrochureBtn}
-          </Button>
-        </Grid>
-        <Grid item md={6}>
-          <img className={classes.heroImage} src={content.heroImage} alt='' />
-        </Grid>
+    <Grid
+      container
+      spacing={1}
+      direction='row'
+      justifyContent='center'
+      alignItems='center'
+    >
+      <Grid item md={6}>
+        <Typography variant='h3'>{appConfig.name}</Typography>
+        <Typography variant='subtitle1'>{appConfig.slogan}</Typography>
+        <Typography className={classes.subtextUnderSlogan} variant='body1' wrap>
+          {homePageContent.heroSection.subtextUnderSlogan}
+        </Typography>
+        <Button className={classes.downloadBtn} variant='outlined'>
+          {homePageContent.heroSection.downloadBrochureBtn}
+        </Button>
       </Grid>
-    </Container>
+      <Grid item md={6}>
+        <img className={classes.heroImage} src={content.heroImage} alt='' />
+      </Grid>
+    </Grid>
   );
 };
 

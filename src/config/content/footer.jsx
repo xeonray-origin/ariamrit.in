@@ -1,11 +1,13 @@
-module.exports = {
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+export default {
   social: [
     {
       icon: 'facebook_icon',
       link: 'http://facebook.com',
     },
     {
-      icon: 'twitter_icon',
+      icon: <TwitterIcon />,
       link: 'http://facebook.com',
     },
     {
@@ -14,7 +16,7 @@ module.exports = {
     },
   ],
   website: 'ariamrit.in',
-  copyrights: '&copysr Ariamrit Engineering Ltd. All rights reserved.',
+  copyrights: '© Ariamrit Engineering Ltd',
   address1: '17G, Dover Terrace',
   address2: 'Ground Floor',
   city: 'Kolkata',
