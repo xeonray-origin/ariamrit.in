@@ -30,7 +30,13 @@ const HomePage = (props) => {
       </div>
       <div className={classes.productsSection}>
         <Container>
-          <Grid container spacing={2} alignItems='center'>
+          <Grid
+            container
+            justifyItems={'center'}
+            align='center'
+            spacing={2}
+            alignItems='center'
+          >
             {homePageContent.productSection.cards.map((product) => (
               <Grid item xs={12} lg={4} md={12} sm={12}>
                 <ProductsCards

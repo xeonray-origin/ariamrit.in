@@ -40,6 +40,33 @@ export default {
         simply random text.It has  roots in a piece of classical 
         Latin literature from 45 BC, making it over 2000 years`,
       },
+      {
+        id: 4,
+        title: 'Dumper Placer',
+        subtitle: 'Lorem Ipsum',
+        image: '/resources/products/dumper_placer/1.png',
+        description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+      },
+      {
+        id: 5,
+        title: 'Water Tankers',
+        subtitle: 'Lorem Ipsum',
+        image: '/resources/products/water_tanks/1.png',
+        description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+      },
+      {
+        id: 6,
+        title: 'Mobile Toilet Van',
+        subtitle: 'Lorem Ipsum',
+        image: '/resources/products/mobile_toilet_van/1.png',
+        description: `Contrary to popular belief, Lorem Ipsum is not
+        simply random text.It has  roots in a piece of classical 
+        Latin literature from 45 BC, making it over 2000 years`,
+      },
     ],
     buttons: ['KNOW MORE', 'download'],
   },
