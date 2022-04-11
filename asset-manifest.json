@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ariamrit.in/static/js/main.b24a3ab0.chunk.js",
-    "main.js.map": "/ariamrit.in/static/js/main.b24a3ab0.chunk.js.map",
+    "main.js": "/ariamrit.in/static/js/main.02a2ddb6.chunk.js",
+    "main.js.map": "/ariamrit.in/static/js/main.02a2ddb6.chunk.js.map",
     "runtime-main.js": "/ariamrit.in/static/js/runtime-main.6f500d06.js",
     "runtime-main.js.map": "/ariamrit.in/static/js/runtime-main.6f500d06.js.map",
     "static/js/2.cc982df6.chunk.js": "/ariamrit.in/static/js/2.cc982df6.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.6f500d06.js",
     "static/js/2.cc982df6.chunk.js",
-    "static/js/main.b24a3ab0.chunk.js"
+    "static/js/main.02a2ddb6.chunk.js"
   ]
 }
