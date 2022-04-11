@@ -22,7 +22,7 @@ const ProductsCards = (props) => {
   };
 
   return (
-    <Card elevation={3}>
+    <Card className={classes.card} elevation={3}>
       <CardMedia
         className={classes.cardMedia}
         component='img'
