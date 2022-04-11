@@ -6,10 +6,27 @@ export default (theme) =>
       height: '100%',
       width: '100%',
     },
+    appName: {
+      fontSize: '3rem!important',
+      fontFamily: 'Roboto',
+      fontWeight: 'bolder',
+    },
+    slogan: {
+      fontSize: '1.5rem!important',
+      fontFamily: 'Roboto',
+      fontWeight: 'bolder',
+      paddingBottom: '1rem',
+    },
+    subtextUnderSlogan: {
+      paddingBottom: '3rem',
+      textAlign: 'justify',
+    },
     downloadBtn: {
-      marginTop: theme.spacing(3),
-      backgroundColor: '#3f8aaa',
-      border: 'none',
-      color: '#f1f1f2',
+      marginTop: '1.8rem',
+      padding: '.8rem!important',
+      '&:hover': {
+        backgroundColor: '#1D749A!important',
+        color: '#f1f1f2',
+      },
     },
   });

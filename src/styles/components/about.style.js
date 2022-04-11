@@ -18,7 +18,6 @@ export default (theme) =>
       marginBottom: '3rem',
     },
     learnMoreBtn: {
-      marginTop: '1.5rem',
       padding: '.8rem!important',
       '&:hover': {
         backgroundColor: '#1D749A!important',

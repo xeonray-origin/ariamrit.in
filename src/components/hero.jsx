@@ -10,16 +10,14 @@ const content = {
 const HeroSection = (props) => {
   const { classes } = props;
   return (
-    <Grid
-      container
-      spacing={1}
-      direction='row'
-      justifyContent='center'
-      alignItems='center'
-    >
+    <Grid container spacing={5} alignItems='center'>
       <Grid item md={6}>
-        <Typography variant='h3'>{appConfig.name}</Typography>
-        <Typography variant='subtitle1'>{appConfig.slogan}</Typography>
+        <Typography className={classes.appName} variant='h3'>
+          {appConfig.name}
+        </Typography>
+        <Typography className={classes.slogan} variant='subtitle1'>
+          {appConfig.slogan}
+        </Typography>
         <Typography className={classes.subtextUnderSlogan} variant='body1' wrap>
           {homePageContent.heroSection.subtextUnderSlogan}
         </Typography>

@@ -6,6 +6,7 @@ export default (theme) =>
       position: 'relative',
       height: 'auto',
       marginTop: theme.spacing(13),
+      marginBottom: theme.spacing(13),
       width: '100%',
     },
     aboutSection: {
@@ -15,12 +16,15 @@ export default (theme) =>
       width: '100%',
       backgroundColor: '#FAFAFA',
       padding: '3rem 0rem 3rem 0rem',
+      marginBottom: theme.spacing(13),
     },
     productsSection: {
       position: 'relative',
+      marginTop: theme.spacing(3),
       height: 'auto',
       width: '100%',
-      padding: '1rem 0rem 1rem 0rem',
+      padding: '3rem 0rem 3rem 0rem',
+      marginBottom: theme.spacing(13),
     },
     accreditSection: {
       position: 'relative',
