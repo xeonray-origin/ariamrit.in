@@ -8,6 +8,9 @@ export default (theme) =>
       marginTop: theme.spacing(13),
       marginBottom: theme.spacing(13),
       width: '100%',
+      [theme.breakpoints.down('ipad')]: {
+        marginTop: '2rem!important',
+      },
     },
     aboutSection: {
       position: 'relative',
@@ -17,6 +20,9 @@ export default (theme) =>
       backgroundColor: '#FAFAFA',
       padding: '3rem 0rem 3rem 0rem',
       marginBottom: theme.spacing(13),
+      [theme.breakpoints.down('ipad')]: {
+        marginBottom: '5rem!important',
+      },
     },
     productsSection: {
       position: 'relative',
@@ -25,15 +31,20 @@ export default (theme) =>
       width: '100%',
       padding: '3rem 0rem 3rem 0rem',
       marginBottom: theme.spacing(13),
+      [theme.breakpoints.down('ipad')]: {
+        marginTop: '1rem!important',
+      },
     },
     accreditSection: {
       position: 'relative',
       height: 'auto',
-      marginTop: theme.spacing(7),
+      paddingTop: theme.spacing(15),
+      paddingBottom: theme.spacing(15),
       width: '100%',
-      backgroundColor: '#F2F2F2',
-      padding: '5rem 0rem 5rem 0rem',
+      backgroundColor: '#f5f5f5',
+      padding: '3rem 0rem 3rem 0rem',
     },
+    accreditsContainer: {},
     researchSection: {
       position: 'relative',
       height: 'auto',

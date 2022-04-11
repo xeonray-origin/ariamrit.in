@@ -6,19 +6,40 @@ const AccreditDisplay = (props) => {
   const { isIcon, text, image, stat } = props;
   return (
     <>
-      <Stack
-        justifyContent={'space-evenly'}
-        alignItems={'center'}
-        direction={'row'}
-        spacing={8}
-      >
-        {isIcon ? (
-          <Icon style={{ fontSize: '4rem', color: '#6B6B6B' }}>{image}</Icon>
-        ) : (
-          <img height={80} src={process.env.PUBLIC_URL + image} alt='...' />
-        )}
-        {/* <Typography variant='h4'>{}</Typography> */}
-      </Stack>
+      {isIcon ? (
+        <>
+          <Icon
+            sx={{
+              fontSize: '4rem',
+              color: '#6B6B6B',
+              textAlign: 'center',
+            }}
+          >
+            {image}
+          </Icon>
+          <Typography
+            sx={{
+              paddingTop: '2.5rem',
+              textAlign: 'center',
+            }}
+          >
+            {text}
+          </Typography>
+        </>
+      ) : (
+        <>
+          <img height={65} src={process.env.PUBLIC_URL + image} alt='...' />
+          <Typography
+            sx={{
+              paddingTop: '2.5rem',
+              textAlign: 'center',
+            }}
+          >
+            {text}
+          </Typography>
+        </>
+      )}
+      {/* <Typography variant='h4'>{}</Typography> */}
     </>
   );
 };

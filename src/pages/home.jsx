@@ -30,9 +30,9 @@ const HomePage = (props) => {
       </div>
       <div className={classes.productsSection}>
         <Container>
-          <Grid container spacing={5} alignItems='center'>
+          <Grid container spacing={2} alignItems='center'>
             {homePageContent.productSection.cards.map((product) => (
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} lg={4} md={12} sm={12}>
                 <ProductsCards
                   id={product.id}
                   title={product.title}
@@ -46,14 +46,8 @@ const HomePage = (props) => {
         </Container>
       </div>
       <div className={classes.accreditSection}>
-        <Container>
-          <Grid
-            container
-            spacing={5}
-            direction='row'
-            justifyContent='center'
-            alignItems='center'
-          >
+        <Container className={classes.accreditsContainer}>
+          <Grid container spacing={7} textAlign={'center'} alignItems='center'>
             {homePageContent.accredits.map((item) => (
               <Grid item md={4} xs={12}>
                 <AccreditDisplay

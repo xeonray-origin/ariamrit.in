@@ -11,7 +11,7 @@ const HeroSection = (props) => {
   const { classes } = props;
   return (
     <Grid container spacing={5} alignItems='center'>
-      <Grid item md={6}>
+      <Grid item md={6} order={{ sm: 2, md: 2, xs: 2, ipad: 1 }}>
         <Typography className={classes.appName} variant='h3'>
           {appConfig.name}
         </Typography>
@@ -25,7 +25,7 @@ const HeroSection = (props) => {
           {homePageContent.heroSection.downloadBrochureBtn}
         </Button>
       </Grid>
-      <Grid item md={6}>
+      <Grid item md={6} order={{ sm: 1, md: 1, xs: 1, ipad: 2 }}>
         <img className={classes.heroImage} src={content.heroImage} alt='' />
       </Grid>
     </Grid>

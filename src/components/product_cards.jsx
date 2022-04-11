@@ -32,13 +32,13 @@ const ProductsCards = (props) => {
         alt='green iguana'
       />
       <CardContent>
-        <Typography variant='h4'>{title.toUpperCase()}</Typography>
-        <Typography variant='title' color='text.secondary'>
-          {subtitle.toUpperCase()}
+        <Typography className={classes.cardTitle}>
+          {title.toUpperCase()}
         </Typography>
-        <Typography variant='body1' color='text.secondary'>
-          {description}
+        <Typography className={classes.cardSubtitle} color='text.secondary'>
+          {subtitle}
         </Typography>
+        <Typography className={classes.cardContext}>{description}</Typography>
       </CardContent>
       <CardActions>
         <Button onClick={onKnowMore} variant='outlined' size='small'>

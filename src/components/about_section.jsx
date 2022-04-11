@@ -11,7 +11,7 @@ const AboutSection = (props) => {
   const { classes } = props;
   return (
     <Grid container spacing={5} alignItems='center'>
-      <Grid item xs={4}>
+      <Grid item md={4}>
         <object
           className={classes.aboutImage}
           data={content.aboutImage}
@@ -20,14 +20,14 @@ const AboutSection = (props) => {
           asd
         </object>
       </Grid>
-      <Grid alignItems={'center'} item xs={8}>
+      <Grid alignItems={'center'} item md={8}>
         <div className={classes.sectionTitle}>
           <Typography className={classes.sectionTitleText}>
             {homePageContent.aboutSection.title}
           </Typography>
         </div>
         <div className={classes.about}>
-          <Typography align='justify' variant='body1'>
+          <Typography variant='body1'>
             {homePageContent.aboutSection.about}
           </Typography>
         </div>
