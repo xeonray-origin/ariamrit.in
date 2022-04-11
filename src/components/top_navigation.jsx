@@ -37,6 +37,7 @@ const TopBar = (props) => {
 
   useEffect(() => {
     window.addEventListener('scroll', calculateScrollPosition);
+    calculateCientWIdth();
     window.addEventListener('resize', calculateCientWIdth);
   }, []);
 
