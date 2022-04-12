@@ -1,12 +1,5 @@
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Grid,
-  Typography,
-  MenuItem,
-} from '@mui/material';
-import { TopBarStyles } from 'styles';
+import { Toolbar, IconButton, Grid, Typography, MenuItem } from '@mui/material';
+import { TopBarStyles, AppBar } from 'styles';
 import { appConfig } from 'config';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@mui/styles';
@@ -19,7 +12,7 @@ const content = {
 };
 
 const TopBar = (props) => {
-  const { classes } = props;
+  const { classes, handleDrawerOpen, open } = props;
   const [isSticky, setIsSticky] = useState();
   const [isMobile, setIsMobile] = useState();
 
@@ -52,7 +45,10 @@ const TopBar = (props) => {
             >
               <MenuItem className={classes.menuItem}>
                 <Typography
-                  sx={{ color: isSticky ? '#f1f1f2' : '#212121' }}
+                  sx={{
+                    color: isSticky ? '#f1f1f2' : '#212121',
+                    fontSize: isSticky ? '1rem' : '1.2rem',
+                  }}
                   variant='subtitle'
                 >
                   {item}
@@ -73,6 +69,7 @@ const TopBar = (props) => {
             size='large'
             edge='start'
             color='inherit'
+            onClick={handleDrawerOpen}
             aria-label='open drawer'
             sx={{ textAlign: 'right', color: isSticky ? '#f1f1f2' : '#212121' }}
           >
@@ -85,8 +82,9 @@ const TopBar = (props) => {
 
   return (
     <AppBar
+      open={open}
       position={isSticky ? 'fixed' : 'relative'}
-      className={classes.appBar}
+      className={isSticky ? classes.appBarSm : classes.appBar}
     >
       <Toolbar
         sx={{
@@ -98,12 +96,12 @@ const TopBar = (props) => {
         <IconButton
           className={classes.icon}
           disabled
-          size='medium'
+          size={isSticky ? 'small' : 'medium'}
           edge='start'
           aria-label='open drawer'
         >
           <img
-            className={classes.logo}
+            className={isSticky ? classes.logoSm : classes.logo}
             src={isSticky ? content.logoW : content.logo}
             alt=''
           />

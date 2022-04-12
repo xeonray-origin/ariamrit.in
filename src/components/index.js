@@ -7,3 +7,4 @@ export { default as ResearchCard } from './research_card';
 export { default as FeedCard } from './feed_card';
 export { default as ContactForm } from './contact_form.jsx';
 export { default as FooterDiv } from './footer';
+export { default as CustomDrawer } from './drawer';

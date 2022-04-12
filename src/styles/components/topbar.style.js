@@ -7,6 +7,9 @@ export default (theme) =>
       border: 'none!important',
       boxShadow: 'none!important',
     },
+    appBarSm: {
+      height: '.8rem',
+    },
     toolbar: {
       height: '100%',
       backgroundColor: '#FAFAFA!important',
@@ -14,6 +17,9 @@ export default (theme) =>
     },
     logo: {
       height: '3rem',
+    },
+    logoSm: {
+      height: '1.8rem',
     },
     icon: {
       textDecoration: 'none',
