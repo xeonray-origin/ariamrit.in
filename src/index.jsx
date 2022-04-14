@@ -7,6 +7,7 @@ import { withStyles } from '@mui/styles';
 import { LayoutStyles, MainSection } from 'styles';
 import { TopBar, FooterDiv, CustomDrawer } from 'components';
 import { theme } from 'config';
+global.process = process;
 
 const Layout = withStyles(LayoutStyles)((props) => {
   const [isDrawerOpen, setIsDrawer] = useState(false);

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import Icon from '@mui/material/Icon';
 import CssBaseline from '@mui/material/CssBaseline';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
@@ -18,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { appConfig } from 'config';
+import { withRouter } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -31,7 +33,10 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 const CustomDrawer = (props) => {
-  const { open, handleDrawerClose } = props;
+  const { open, handleDrawerClose, history } = props;
+
+  const redirect = (path) => history.push(path);
+
   return (
     <Drawer
       sx={{
@@ -53,11 +58,15 @@ const CustomDrawer = (props) => {
       <Divider />
       <List>
         {appConfig.menuItems.map((item, index) => (
-          <ListItem button key={item}>
+          <ListItem
+            onClick={() => redirect(item.path.toLowerCase())}
+            button
+            key={index}
+          >
             <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <Icon>{item.icon}</Icon>
             </ListItemIcon>
-            <ListItemText primary={item} />
+            <ListItemText primary={item.path} />
           </ListItem>
         ))}
       </List>
@@ -66,4 +75,4 @@ const CustomDrawer = (props) => {
   );
 };
 
-export default CustomDrawer;
+export default withRouter(CustomDrawer);

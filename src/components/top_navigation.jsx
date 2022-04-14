@@ -41,7 +41,7 @@ const TopBar = (props) => {
           <Grid item key={idx}>
             <Link
               style={{ textDecoration: 'none', color: '#212121' }}
-              to={`${item === 'Home' ? '/' : '/' + item.toLowerCase()}`}
+              to={`${item === 'Home' ? '/' : '/' + item.path.toLowerCase()}`}
             >
               <MenuItem className={classes.menuItem}>
                 <Typography
@@ -51,7 +51,7 @@ const TopBar = (props) => {
                   }}
                   variant='subtitle'
                 >
-                  {item}
+                  {item.path}
                 </Typography>
               </MenuItem>
             </Link>

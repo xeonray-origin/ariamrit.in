@@ -18,7 +18,11 @@ const HeroSection = (props) => {
         <Typography className={classes.slogan} variant='subtitle1'>
           {appConfig.slogan}
         </Typography>
-        <Typography className={classes.subtextUnderSlogan} variant='body1' wrap>
+        <Typography
+          className={classes.subtextUnderSlogan}
+          variant='body1'
+          noWrap={false}
+        >
           {homePageContent.heroSection.subtextUnderSlogan}
         </Typography>
         <Button className={classes.downloadBtn} variant='outlined'>

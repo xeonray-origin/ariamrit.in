@@ -37,7 +37,7 @@ const HomePage = (props) => {
             spacing={2}
             alignItems='center'
           >
-            {homePageContent.productSection.cards.map((product) => (
+            {homePageContent.productSection.cards.map((product, key) => (
               <Grid item xs={12} lg={4} md={12} sm={12}>
                 <ProductsCards
                   id={product.id}
@@ -45,6 +45,7 @@ const HomePage = (props) => {
                   subtitle={product.subtitle}
                   description={product.description}
                   image={product.image}
+                  key={key}
                 />
               </Grid>
             ))}
@@ -54,13 +55,14 @@ const HomePage = (props) => {
       <div className={classes.accreditSection}>
         <Container className={classes.accreditsContainer}>
           <Grid container spacing={7} textAlign={'center'} alignItems='center'>
-            {homePageContent.accredits.map((item) => (
+            {homePageContent.accredits.map((item, key) => (
               <Grid item md={4} xs={12}>
                 <AccreditDisplay
                   isIcon={item.isIcon}
                   image={item.image}
                   text={item.text}
                   stat={item.stat}
+                  key={key}
                 />
               </Grid>
             ))}
@@ -77,24 +79,26 @@ const HomePage = (props) => {
             alignItems='center'
           >
             <Grid item md={8} xs={12}>
-              {homePageContent.research.map((data) => (
+              {homePageContent.research.map((data, key) => (
                 <ResearchCard
                   title={data.title}
                   text={data.text}
                   image={data.image}
                   subtitle={data.subtitle}
+                  key={key}
                 />
               ))}
             </Grid>
             <Grid item md={4} xs={12}>
               <Typography variant='subtitle2'>#Tweets</Typography>
               <div classsName={classes.tweetHolder}>
-                {homePageContent.research.map((data) => (
+                {homePageContent.research.map((data, key) => (
                   <FeedCard
                     title={data.title}
                     text={data.text}
                     image={data.image}
                     subtitle={data.subtitle}
+                    key={key}
                   />
                 ))}
               </div>

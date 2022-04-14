@@ -7,7 +7,7 @@ const ProductPage = () => {
     <Container style={{ marginTop: '5rem', marginBottom: '5rem' }}>
       <Grid container spacing={3}>
         {products.map((product) => (
-          <Grid md={4} item key={product.id}>
+          <Grid item md={4} key={product.id}>
             <ProductsCards
               id={product.id}
               image={product.image}

@@ -33,7 +33,7 @@ const FooterDiv = (props) => {
             {footerContent.copyrights}
           </Typography>
         </Grid>
-        <Grid textAlign={'right'} md={4}>
+        <Grid item textAlign={'right'} md={4}>
           <Typography className={classes.footerSmallText}>
             {footerContent.address1}
           </Typography>
