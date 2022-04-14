@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useMemo } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -36,6 +36,7 @@ const CustomDrawer = (props) => {
   const { open, handleDrawerClose, history } = props;
 
   const redirect = (path) => history.push(path);
+  const items = useMemo(() => appConfig.menuItems.reverse(), []);
 
   return (
     <Drawer
@@ -57,7 +58,7 @@ const CustomDrawer = (props) => {
       </DrawerHeader>
       <Divider />
       <List>
-        {appConfig.menuItems.map((item, index) => (
+        {items.map((item, index) => (
           <ListItem
             onClick={() => redirect(item.path.toLowerCase())}
             button

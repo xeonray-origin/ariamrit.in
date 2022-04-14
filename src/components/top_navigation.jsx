@@ -3,7 +3,7 @@ import { TopBarStyles, AppBar } from 'styles';
 import { appConfig } from 'config';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@mui/styles';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const content = {
@@ -15,6 +15,7 @@ const TopBar = (props) => {
   const { classes, handleDrawerOpen, open } = props;
   const [isSticky, setIsSticky] = useState();
   const [isMobile, setIsMobile] = useState();
+  const items = useMemo(() => appConfig.menuItems.reverse(), []);
 
   const calculateScrollPosition = () => {
     let windowHeight = window.scrollY;
@@ -37,7 +38,7 @@ const TopBar = (props) => {
   const DesktopMenu = () => {
     return (
       <Grid container spacing={1} direction='row-reverse'>
-        {appConfig.menuItems.map((item, idx) => (
+        {items.map((item, idx) => (
           <Grid item key={idx}>
             <Link
               style={{ textDecoration: 'none', color: '#212121' }}

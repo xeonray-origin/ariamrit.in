@@ -54,12 +54,5 @@ export default (theme) =>
       top: 1,
       bottom: 0,
       margin: '0!important',
-      [theme.breakpoints.down('ipad')]: {
-        padding: '.5rem!important',
-        fontSize: '.7rem!important',
-        display: 'block!important',
-        marginLeft: 'auto!important',
-        marginRight: 'auto!important',
-      },
     },
   });

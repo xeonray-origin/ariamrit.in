@@ -11,7 +11,7 @@ export const appConfig = {
     { path: 'Products', icon: 'local_shipping_icon' },
     { path: 'About', icon: 'info' },
     { path: 'Home', icon: 'home' },
-  ].reverse(),
+  ],
   routes: [
     {
       path: '/',

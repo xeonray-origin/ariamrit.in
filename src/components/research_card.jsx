@@ -32,6 +32,7 @@ const ResearchCards = (props) => {
             className={classes.exploreBtn}
             startIcon={<Icon>explore_icon</Icon>}
             variant='contained'
+            size='small'
           >
             Explore{' '}
           </Button>
