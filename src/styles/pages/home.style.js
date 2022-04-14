@@ -29,7 +29,6 @@ export default (theme) =>
       marginTop: theme.spacing(3),
       height: 'auto',
       width: '100%',
-      padding: '3rem 0rem 3rem 0rem',
       marginBottom: theme.spacing(13),
       [theme.breakpoints.down('ipad')]: {
         marginTop: '1rem!important',
@@ -48,10 +47,10 @@ export default (theme) =>
     researchSection: {
       position: 'relative',
       height: 'auto',
-      marginTop: theme.spacing(7),
+      marginTop: theme.spacing(15),
+      marginBottom: theme.spacing(15),
       width: '100%',
       backgroundColor: '#FAFAFA',
-      padding: '5rem 0rem 5rem 0rem',
     },
     tweetHolder: {
       height: '100%',
@@ -64,10 +63,23 @@ export default (theme) =>
     },
     contactSection: {
       // paddingTop: '10rem',
-      paddingBottom: theme.spacing(10),
+      marginTop: theme.spacing(15),
+      marginBottom: theme.spacing(15),
       // backgroundColor: '#07AC5D',
     },
-
+    researchShort: {
+      fontSize: '4rem',
+      letterSpacing: '0.0075em',
+      verticalAlign: 'middle',
+      alignItems: 'center',
+      textAlign: 'center',
+      fontWeight: '450',
+      fontFamily: 'Special',
+      [theme.breakpoints.down('ipad')]: {
+        fontSize: '2.5rem!important',
+        wordSpacing: '1px!important',
+      },
+    },
     mapouter: {
       position: 'relative',
       textAlign: 'right',

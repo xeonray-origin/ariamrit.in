@@ -23,11 +23,16 @@ export default ({ spacing }) =>
       textJustify: 'inter-word',
     },
     cardMedia: {
-      padding: spacing(2),
+      padding: spacing(1),
+      height: '100%',
+    },
+    image: {
+      height: '100%!important',
     },
     card: {
       width: '100%',
       maxHeight: '40rem',
       padding: '1rem',
+      borderRadius: '.5rem!important',
     },
   });

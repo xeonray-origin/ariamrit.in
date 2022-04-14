@@ -71,11 +71,26 @@ const HomePage = (props) => {
       </div>
       <div className={classes.researchSection}>
         <Container>
+          <Grid container spacing={7} textAlign={'center'} alignItems='center'>
+            <Grid item>
+              <Typography
+                className={classes.researchShort}
+                variant='h2'
+                align='center'
+              >
+                {homePageContent.researchShortNote}
+              </Typography>
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+      <div className={classes.researchSection}>
+        <Container>
           <Grid
             container
-            spacing={GLOBAL_SPACING}
-            direction='row'
-            justifyContent='center'
+            justifyItems={'center'}
+            align='center'
+            spacing={5}
             alignItems='center'
           >
             <Grid item md={8} xs={12}>

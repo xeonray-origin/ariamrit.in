@@ -25,21 +25,17 @@ const ResearchCards = (props) => {
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography
-            variant='subtitle1'
-            color='text.secondary'
-            component='div'
+          <Typography className={classes.title}>{title}</Typography>
+          <Typography className={classes.subtitle}>{subtitle}</Typography>
+          <Typography className={classes.body}>{text}</Typography>
+          <Button
+            className={classes.exploreBtn}
+            startIcon={<Icon>explore_icon</Icon>}
+            variant='contained'
           >
-            {title}
-          </Typography>
-          <Typography component='div' variant='h5'>
-            {subtitle}
-          </Typography>
-          <Typography component='p' variant='body1'>
-            {text}
-          </Typography>
+            Explore{' '}
+          </Button>
         </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}></Box>
       </Box>
     </Card>
   );

@@ -5,7 +5,7 @@ import { withStyles } from '@mui/styles';
 const FeedCard = (props) => {
   const { classes, title, subtitle, text, image } = props;
   return (
-    <Card className={classes.card}>
+    <Card elevation={0} className={classes.card}>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography variant='body' component='div'>
