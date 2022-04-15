@@ -20,7 +20,19 @@ export default ({ spacing }) =>
     },
     multiInput: {
       width: '100%',
-      marginTop: '1rem',
+      marginTop: '3rem',
       marginBottom: '1rem',
+    },
+    formContainer: {
+      position: 'relative',
+      top: '50%',
+      transform: 'translateY(-60%)',
+      padding: '0 2rem 0 2rem ',
+    },
+    formLabel: {
+      fontFamily: 'Special!important',
+      fontSize: '3rem!important',
+      fontWeight: 650,
+      padding: '0 1rem 0 1rem',
     },
   });

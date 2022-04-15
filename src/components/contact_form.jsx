@@ -26,26 +26,50 @@ const ContactForm = (props) => {
   };
 
   return (
-    <div sx={{ position: 'reative' }}>
-      <form onSubmit={onSubmit}>
-        <Input className={classes.input} name='name' placeholder='Name' />
-        <Input
-          className={classes.input}
-          name='phone'
-          placeholder='Phone Number'
-        />
-        <Input className={classes.input} name='phone' placeholder='Email' />
-        <TextField
-          className={classes.multiInput}
-          placeholder='Requirements'
-          multiline
-          rows={4}
-        />
-        <Button variant='contained' color='primary' type='submit'>
-          Submit
-        </Button>
-      </form>
-    </div>
+    <>
+      <Typography className={classes.formLabel}>
+        We would love to hear from you !
+      </Typography>
+      <Grid
+        className={classes.formContainer}
+        container
+        direction={'row'}
+        alignItems={'center'}
+      >
+        <form onSubmit={onSubmit}>
+          <Grid item>
+            <Input
+              className={classes.input}
+              name='name'
+              size='small'
+              placeholder='Name'
+            />
+            <Input
+              className={classes.input}
+              size='small'
+              name='phone'
+              placeholder='Phone Number'
+            />
+            <Input className={classes.input} name='phone' placeholder='Email' />
+            <TextField
+              className={classes.multiInput}
+              placeholder='Requirements'
+              size='small'
+              multiline
+              rows={4}
+            />
+            <Button
+              sx={{ marginTop: '2rem' }}
+              variant='contained'
+              color='primary'
+              type='submit'
+            >
+              Submit
+            </Button>
+          </Grid>
+        </form>
+      </Grid>
+    </>
   );
 };
 

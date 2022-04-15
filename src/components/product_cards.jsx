@@ -26,8 +26,8 @@ const ProductsCards = (props) => {
       <CardMedia
         className={classes.cardMedia}
         component='img'
-        height={300}
-        width={200}
+        height={100}
+        width={100}
         image={process.env.PUBLIC_URL + image}
         alt='green iguana'
       />
@@ -41,10 +41,15 @@ const ProductsCards = (props) => {
         <Typography className={classes.cardContext}>{description}</Typography>
       </CardContent>
       <CardActions>
-        <Button onClick={onKnowMore} variant='outlined' size='small'>
+        <Button
+          class={classes.knowBtn}
+          onClick={onKnowMore}
+          variant='outlined'
+          size='small'
+        >
           know more
         </Button>
-        <Button variant='outlined' size='small'>
+        <Button color='primary' variant='contained' size='small'>
           download spec
         </Button>
       </CardActions>

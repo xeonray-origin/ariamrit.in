@@ -24,14 +24,14 @@ export default ({ spacing }) =>
     },
     cardMedia: {
       padding: spacing(1),
-      height: '100%',
+      height: '20rem',
     },
     image: {
-      height: '100%!important',
+      height: '180px!important',
     },
     card: {
       width: '100%',
-      maxHeight: '40rem',
+      height: 'auto',
       padding: '1rem',
       borderRadius: '.5rem!important',
     },
