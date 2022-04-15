@@ -8,3 +8,5 @@ export { default as FeedCard } from './feed_card';
 export { default as ContactForm } from './contact_form.jsx';
 export { default as FooterDiv } from './footer';
 export { default as CustomDrawer } from './drawer';
+export { default as Map } from './map';
+export { default as ContactCard } from './contact_card';

@@ -26,11 +26,8 @@ const ContactForm = (props) => {
   };
 
   return (
-    <Card className={classes.card} elevation={0}>
+    <div sx={{ position: 'reative' }}>
       <form onSubmit={onSubmit}>
-        <legend>
-          <Typography variant='subtitle2'>Get in Touch</Typography>
-        </legend>
         <Input className={classes.input} name='name' placeholder='Name' />
         <Input
           className={classes.input}
@@ -48,7 +45,7 @@ const ContactForm = (props) => {
           Submit
         </Button>
       </form>
-    </Card>
+    </div>
   );
 };
 

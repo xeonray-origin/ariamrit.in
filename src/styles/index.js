@@ -16,3 +16,4 @@ export { default as FooterStyles } from './components/footer.style';
 export { default as ProductPageStyles } from './pages/products.style';
 export { default as MainSection } from './components/main.styled';
 export { default as AppBar } from './components/appbar.styled';
+export { default as ContactCardStyle } from './components/contact.card.style';

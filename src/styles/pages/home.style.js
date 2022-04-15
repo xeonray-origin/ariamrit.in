@@ -66,6 +66,7 @@ export default (theme) =>
       marginTop: theme.spacing(15),
       marginBottom: theme.spacing(15),
       // backgroundColor: '#07AC5D',
+      height: 'auto',
     },
     researchShort: {
       fontSize: '4rem',
@@ -80,11 +81,9 @@ export default (theme) =>
         wordSpacing: '1px!important',
       },
     },
-    mapouter: {
-      position: 'relative',
-      textAlign: 'right',
-      width: '100%',
-      height: '100%',
+    maprouter: {
+      width: '100px',
+      height: '100px',
     },
     gmap_canvas: {
       overflow: 'hidden',

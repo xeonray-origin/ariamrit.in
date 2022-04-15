@@ -7,10 +7,13 @@ import {
   AccreditDisplay,
   ResearchCard,
   FeedCard,
+  Map,
   ContactForm,
+  ContactCard,
 } from 'components';
 import { homePageContent } from 'config';
 import { withStyles } from '@mui/styles';
+import { Wrapper, Status } from '@googlemaps/react-wrapper';
 
 const GLOBAL_SPACING = 5;
 
@@ -123,27 +126,7 @@ const HomePage = (props) => {
       </div>
       <div className={classes.contactSection}>
         <Container>
-          <Grid
-            container
-            spacing={GLOBAL_SPACING}
-            direction='row'
-            justifyContent='center'
-            alignItems='center'
-          >
-            <Grid item md={4} xs={12}>
-              <ContactForm />
-            </Grid>
-            <Grid item md={8} xs={12}>
-              <div className={classes.maprouter}>
-                <img
-                  alt='Not found'
-                  height='400px'
-                  width='100%'
-                  src={homePageContent.contact.mapUrl}
-                />
-              </div>
-            </Grid>
-          </Grid>
+          <ContactCard />
         </Container>
       </div>
     </>
