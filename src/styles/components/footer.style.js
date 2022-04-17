@@ -41,4 +41,11 @@ export default (theme) =>
       fontSize: '1rem',
       height: '1rem',
     },
+    company: {
+      [theme.breakpoints.down('ipad')]: {
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      },
+    },
   });

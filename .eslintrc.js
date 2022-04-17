@@ -2,9 +2,17 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
   },
-  extends: ['react-app', 'prettier'],
-  plugins: ['prettier', 'react'],
+  extends: [
+    'react-app',
+    'prettier',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:react/jsx-runtime',
+  ],
+  plugins: ['prettier', 'react', 'react-hooks', 'jsx-a11y'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -27,6 +35,7 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-empty': 'warn',
+    'no-unused-vars': 'warn',
     semi: 'warn',
     'new-parens': 'warn',
     'newline-per-chained-call': 'off',
@@ -78,9 +87,15 @@ module.exports = {
       },
     ],
     'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
-    'import/resolver': 'webpack',
+    react: {
+      version: 'detect',
+    },
   },
-  ignorePatterns: ['*.json', 'build', 'public'],
+  ignorePatterns: ['build', 'public'],
 };

@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Home from '@mui/icons-material';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import React, { useState } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
+
 require('dotenv').config();
 const MapContainer = (props) => {
-  const { google, height } = props;
+  const { google, height, width } = props;
   const [showingInfoWindow, setShowingInfoWindow] = useState(false);
   const [activeMarker, setActiveMarker] = useState({});
   const [selectedPlace, setSelectedPlace] = useState({});
@@ -32,8 +31,6 @@ const MapContainer = (props) => {
       }}
       style={{
         height: height,
-        width: '100%',
-        position: 'relative',
       }}
     >
       <Marker onClick={onMarkerClick} name={'Ariamrit Engineering Ltd'} />

@@ -1,11 +1,4 @@
-import {
-  Card,
-  CardMedia,
-  Typography,
-  CardContent,
-  Grid,
-  Box,
-} from '@mui/material';
+import { Card, Grid } from '@mui/material';
 import { Map, ContactForm } from 'components';
 import Measure from 'react-measure';
 import { useState } from 'react';
@@ -27,23 +20,17 @@ const ContactCard = (props) => {
     >
       {({ measureRef }) => (
         <Card
+          raised={true}
           ref={measureRef}
-          sx={{ width: '100%', height: '40rem', borderRadius: '.5rem' }}
+          sx={width < 760 ? { height: '90rem' } : { height: '40rem' }}
         >
           <Grid container>
             <Grid item sx={{ padding: '1rem' }} md={6} xs={12} sm={12}>
               <ContactForm />
             </Grid>
             <Grid item md={6} xs={12} sm={12}>
-              <div
-                className={classes.map}
-                style={{
-                  position: 'relative',
-                  width: '100%',
-                  heightt: 'auto',
-                }}
-              >
-                <Map height={height} />
+              <div className={classes.map}>
+                <Map width={width} height={height} />
               </div>
             </Grid>
           </Grid>

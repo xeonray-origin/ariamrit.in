@@ -7,13 +7,10 @@ import {
   AccreditDisplay,
   ResearchCard,
   FeedCard,
-  Map,
-  ContactForm,
   ContactCard,
 } from 'components';
 import { homePageContent } from 'config';
 import { withStyles } from '@mui/styles';
-import { Wrapper, Status } from '@googlemaps/react-wrapper';
 
 const GLOBAL_SPACING = 5;
 
@@ -41,7 +38,7 @@ const HomePage = (props) => {
             alignItems='center'
           >
             {homePageContent.productSection.cards.map((product, key) => (
-              <Grid item xs={12} lg={4} md={12} sm={12}>
+              <Grid key={key} item xs={12} lg={4} md={12} sm={12}>
                 <ProductsCards
                   id={product.id}
                   title={product.title}
@@ -59,7 +56,7 @@ const HomePage = (props) => {
         <Container className={classes.accreditsContainer}>
           <Grid container spacing={7} textAlign={'center'} alignItems='center'>
             {homePageContent.accredits.map((item, key) => (
-              <Grid item md={4} xs={12}>
+              <Grid key={key} item md={4} xs={12}>
                 <AccreditDisplay
                   isIcon={item.isIcon}
                   image={item.image}
